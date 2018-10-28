@@ -5,7 +5,7 @@ import pandas as pd
 
 from sklearn.metrics import accuracy_score
 
-from datasets import _rocstories
+from openai.datasets import _rocstories
 
 def rocstories(data_dir, pred_path, log_path):
     preds = pd.read_csv(pred_path, delimiter='\t')['prediction'].values.tolist()
